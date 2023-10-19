@@ -3,10 +3,433 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Page</title>
+    <style>
+     body{
+        margin: 0px;
+        padding:0px ;
+        background-color: #f7f7f7;
+     }
+     .showroom-name{
+      text-align: center;
+      font-family: sans-serif;
+      box-shadow: 1px 1px 2px 2px black;
+     }
+     .main-hading{
+        background-color:black;
+        height: 50px;
+        padding: 15px;
+        border: 10px solid #f7f7f7;
+     }
+     .title{ 
+        background-color:black;
+            color: white;
+            font-family:system-ui;
+            font-size: 20px;
+            border:none;
+            padding: 5px 20px;
+            margin: 10px;
+            cursor: pointer;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+}
+        .title:hover{
+        padding: 8px 27px;
+        transition: 0.1s;
+        }
+        .all-title{
+            margin-top: 20px;
+            margin-left: 120px;
+            margin-bottom: 30px;
+        }
+        .second-img{
+        margin-left: 5px;
+        height: 300px;
+        margin-top: 20px;
+        border: 2px solid brown;
+        }
+        .container{
+            display: flex;
+            margin-left: 0px;
+            text-align: center;
+            background-color:#3a4555;
+            height: 450px;
+            border: 2px solid gray;
+        }
+        .container2{
+            display: flex;
+            margin-left: 0px;
+            text-align: center;
+        }
+        .container3{
+            display: flex;
+            margin-left: 0px;
+            text-align: center;
+            justify-content: space-evenly;
+            background-color: #09162a;
+            height: 450px;
+        }
+       .container-h1{
+        margin-top: 20px;
+        margin-left: 20px;
+        color: white;
+        }
+        .titil-p1{
+            font-family: cursive;
+            color: white;
+        }
+        .btn{
+            background-color:black;
+            border: none;
+            padding: 8px 19px;
+            color: white;
+            border-radius: 5px;
+            cursor:pointer ;
+        }
+        .btn:hover{
+            padding: 5px 20px;
+            border-radius: 18px;
+        }
+        .about-name{
+            color: red;
+        }
+        .about{
+            text-align: center;
+            font-size: 50px;
+            margin-top: 50px;
+        }
+        .about1{
+            text-align: center;
+            font-size: 50px;
+            margin-top: 70px;
+        }
+        .about3{
+            text-align: center;
+            font-size: 50px;
+            margin-top: 40px;
+        }
+        .about2{
+            margin-top: 100px;
+            color: aliceblue;
+        }
+        .about-tiyil{
+            font-size: 30px;
+            margin-top: 30px;
+        }
+        .about-tilitl{
+            font-family: cursive;
+            font-size: 19px;
+        }
+        .card-contner{
+            margin-top: 50px;
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: space-around;
+        }
+        .card{
+            width: 250px;
+            height: 300px;
+            background-color:white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 1px 1px 5px 2px black ;
+            position: relative;
+            border-bottom:2px solid red;
+        }
+        .card:hover{
+            width: 260px;
+            height:300px ;
+        }
+        .card-font{
+            text-align: center;
+            font-size: 30px;
+        }
+        .card-font2{
+            text-align: center;
+        }
+        .ion-font{
+            font-size: 80px;
+            text-align: center;
+            margin-left: 95px;
+            margin-top: 30px;
+        }
+        .project-img{
+            height: 300px;
+            margin-left: 20px;
+            box-shadow: 1px 1px 2px 2px black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .project-img:hover{
+            height: 300px;
+           border-radius: 15px;
+           box-shadow: 1px 1px 3px 3px;
+        }
+        .pro-titil{
+            margin-left: 50px;
+            font-size: 25px;
+        }
+        .projact-conter{
+            margin-top: 50px;
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: space-around;
+        }
+        .pro-titil1{
+            margin-left: 80px;
+            font-size: 25px
+        }
+        .testimonials{
+            height: 300px;
+            width: 500px;
+            background-color:#47505f;
+            margin-left: 40px;
+            position: relative;
+            margin-top: 75px;
+        }
+        .test-titil{
+            font-family: cursive;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+            color: #f7f7f7;
+        }
+        .Customer-img{
+           border-radius: 50%;
+           position: absolute;
+           bottom: -40px;
+           right: 200px;
+           box-shadow: 1px 1px 2px 2px black;
+        }
+        .nwe-car-img{
+            height: 150px;
+            margin-left: 110px;
+            box-shadow: 1px 1px 2px 2px black;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 1px 1px 2px 2px black;
+        }
+        .nwe-car-titil{
+            height: 370px;
+            width: 500px;
+            background-color:#47505f;
+            margin-left: 40px;
+            margin-top: 75px;
+            border-radius: 10px;
+        }
+        .new-car-titil{
+            margin-left: 150px;
+            font-size: 25px;
+            color: aliceblue;
+            font-family: cursive;
+        }
+        .new-car-p{
+            text-align: center;
+            font-size: 15px;
+            color: #f7f7f7;
+            font-family: cursive;
+            padding: 10px;
+        }
+        @media only screen and (max-width: 600px){
+            .all-title{
+            margin-top: 10px;
+            margin-bottom: 10px;
+           margin-left: -0px;
+        }
+        .title{
+        margin: -15px;
+        }
+        .title:hover{
+        padding: 3px 15px;
+        transition: 0.1s;
+        }
+        .logo-car{
+            height: 250px;
+            margin-top: 100px;
+        }
+        .container-h1{
+        margin-bottom: 100px;
+        }
+       .second-img{
+        margin-left: 5px;
+        height: 150px;
+        margin-top: 20px;
+        border: 2px solid brown;
+        }
+        .card{
+            width: 230px;
+            height: 300px;
+            background-color:white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 1px 1px 5px 2px black ;
+            position: relative;
+            border-bottom:2px solid red;
+        }
+        .test-titil{
+            font-family: cursive;
+            font-size: 13px;
+            padding: 20px;
+            text-align: center;
+            color: #f7f7f7;
+        }
+        .Customer-img{
+           border-radius: 50%;
+           position: absolute;
+           bottom: -40px;
+           right: 100px;
+           box-shadow: 1px 1px 2px 2px black;
+        }
+        }
+    </style>
 </head>
 <body>
-  <h1>this is a about page </h1>  
-  <h1>Nikhil Gadakh</h1>
+    <h1 class="showroom-name"> ⚙ LUXURY SHOWROOM ⚙</h1>
+    <div class="main-hading">
+    <div class="all-title">
+    <span class="title"><a href="./../index.html" class="title">HOME</a></span>
+
+     
+    <span class="title"><a href="car.html" class="title">CAR</a></span>
+    
+
+    <span class="title"><a href="contact.html" class="title">CONTACT US</a></span>
+    
+    <span class="title"><a href="order.html" class="title">ORDER</a></span>
+    
+    <span class="title"><a href="login.html" class="title">SIGN IN</a></span>
+       </div>
+    </div>
+       <div class="container"> 
+        <div>
+        <img src="./../image/car-logo.png " class="logo-car" />
+        </div>
+        <div>
+            <h1 class="about2">WELLCOME TO <span class="about-name">OUR SHOWROOM</span></h1>
+            <h1 class="container-h1">MAKE YOUR CAR LAST LONGER</h1>
+            <p class="titil-p1">We always strive for the client's satisfaction with ecological welfare</p>
+            <button class="btn" type="button"> Read  More</button>
+        </div>
+    </div>
+    <h1 class="about">ABOUT<span class="about-name">US</span></h1>
+
+        <div class="container2"> 
+            <div>
+            <img src="./../image/about-page-car.jpg"class="second-img" />
+            </div>
+            <div>
+              <h1 class="about-tiyil">WITH NEW ASPIRATIONS FOR EVERY GENERATION</h1>
+              <p class="about-tilitl">Re-defining the generation of automobiles by setting a stepping stone to follow on the league, we are the Solid automobiles, specialized in providing all automobiles services, with top quality and affordable price that makes us one of the prime choices in the market. We always strive for the client's satisfaction with ecological welfare.
+              </p>
+            </div>
+        </div>
+        <h1 class="about3">SERVIC<span class="about-name">ES</span></h1>
+
+            <div class="card-contner">
+                <div class="card">
+             <i class="fa-regular fa-thumbs-up ion-font" style="color:black;"></i>
+                    <h1 class="card-font">Apply Finance</h1>
+                    <p class="card-font2">We offer numerous affordable and simple finance options to make your dream of owninig avehicle comes
+                        trus
+                    </p>
+                </div>
+            
+          
+                <div class="card">
+                    <i class="fa-solid fa-screwdriver-wrench ion-font" style="color: #000000;"></i>
+                    <h1 class="card-font">Vahicles Service</h1>
+                    <p class="card-font2">Let us help with our full conerage services to manitain the precious insight and the hard core of your vehicles</p>
+                </div>
+            
+           
+                <div class="card">
+                    <i class="fa-solid fa-car ion-font" style="color: #000000;"></i>
+                    <h1 class="card-font">New Vahicles</h1>
+                    <p class="card-font2">Buying a new vehicles is now the most affordable thing to do with infinite financing options and best staff</p>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-tag ion-font" style="color: #000000;"></i>
+                    <h1 class="card-font">Specilal Offers</h1>
+                    <p class="card-font2">We always try to enconrage our customers by providing them differnt special offers to manintain a comfortable environment</p>
+                </div>
+            </div>
+             <h1 class="about1">OUR<span class="about-name">PROJECTS</span></h1>
+
+             <div class="projact-conter">
+            <div>
+                <h1 class="pro-titil">CAR INSPECTION</h1>
+            <img src="./../image/about-page-img.jpg " class="project-img"/>
+
+            </div>
+
+            <div>
+                <h1 class="pro-titil1">AUTO PAINT</h1>
+            <img src="./../image/about-page-img2.jpg" class="project-img"/>
+
+            </div>
+
+            <div>
+                <h1 class="pro-titil">PARTS REPAIRING</h1>
+            <img src="./../image/about-page-img3.jpg" class="project-img"/>
+
+            </div>
+             </div>
+
+             <h1 class="about">OUR <span class="about-name">TESTIMONIALS</span></h1>
+
+             <div class="container3"> 
+
+    <div class="testimonials">
+       <p class="test-titil">"Buying a new vehicle is always a challenge, but Solid automobiles make the process feel so effortless and comfortable with all the proper guidance at every point. professional and experienced staff, and intriguing offers Overall great experience. Will be my first choice for all ove automobile needs"</p>
+       <img src="https://i.pravatar.cc/100?img=8" class="Customer-img"/>
+    </div>
+
+    <div class="testimonials">
+        <p class="test-titil">"I love the friendly environment that the staff maintains. As a common public, I don't have much knowledge about the right vehicle, but theintriguing offers Overall great manager was very patient and helpful in every step, and I will surely give them a 5star rating for the services they provide"</p>
+        <img src="https://i.pravatar.cc/100?img=12" class="Customer-img"/>
+    </div>
+    </div>
+
+    <h1 class="about1">OUR <span class="about-name"> LATEST UPDATE 2023</span></h1>
+
+
+    <div class="projact-conter">
+        <div class="nwe-car-titil">
+            <h1 class="new-car-titil"> TATA HARRIER</h1>
+        <img src="./../image/about-page-tata-harrier.jpg" class="nwe-car-img"/>
+        <p class="new-car-p">Inside the cabin, the new Tata Harrier facelift comes with a larger 12.2-inch touchscreen infotainment system and a 10.2-inch fully digital instrument cluster. It also comes with a new 10-speaker JPL audio system, powered and ventilated driver and co-driver seats, sun blinds for the rear row and an air purifier</p>
+        </div>
+
+        <div class="nwe-car-titil" >
+
+            <h1 class="new-car-titil">TATA SAFARI</h1>
+        <img src="./../image/about-page-tata-safari.jpg" class="nwe-car-img"/>
+        <p class="new-car-p">What is the price of new Safari 2023 model?
+            Tata Safari Price - Images, Colours & Reviews - CarWale
+            15.85 Lakh - Rs. 25.21 Lakh depending on the variant selected. Market introduction: The 2023 Tata Safari was launched in India on 22 February, 2023.
+            </p>
+
+        </div>
+
+        <div class="nwe-car-titil">
+            <h1 class="new-car-titil">TATA ALTROZ</h1>
+         <img src="./../image/about-page-tata-altroz2.jpg" class="nwe-car-img"/>
+          <p class="new-car-p">Is there a new Altroz coming?
+            Tata Altroz Racer is a seater hatchback. The Tata Altroz Racer is expected to launch in India in December 2023. The Tata Altroz Racer will rival Punch, i20 and Ignis. Expect prices to start from 10 Lakh.</p>
+
+        </div>
+
+        <div class="nwe-car-titil">
+           
+            <h1 class="new-car-titil">TATA CURVV-EV</h1>
+        <img src="./../image/about-page-tata-curvv-ev.jpg" class="nwe-car-img"/>
+        <p class="new-car-p">Is Tata Curvv electric?
+            In April 2022, Tata Motors unveiled the Curvv electric SUV concept and took everyone by surprise with its futuristic and sharp design language</p>
+        </div>
+
+         </div>
+
+         <script src="https://kit.fontawesome.com/863b4921f2.js" crossorigin="anonymous"></script>
 </body>
 </html>
