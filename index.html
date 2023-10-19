@@ -4,8 +4,243 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #d9d9d9;
+    }
+
+  .navbar{
+    height: 150px;
+    width: 100%;
+    /* background-color: #666666; */
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+    }  
+
+ .car-logo{
+    height: 200px;
+    position: absolute;
+    top: 0;
+ }
+  
+
+  .navbar-menu{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-left: 500px;
+    text-align: center;
+  position: absolute;
+  top: 90px;
+  left: 60px;
+
+  }
+
+  .menus{
+    margin: 40px;
+    font-size: 25px;
+  }
+
+  .menus:hover{
+    height: 150px;
+    background-color: rgb(210, 28, 28);
+    box-shadow: 0 0 10px white;
+    background-size: 100px;
+  }
+
+  /* midddle section */
+  .middle-section{
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .car-image{
+    height: 400px;
+    position: absolute;
+    right: 50px;
+    border-radius: 30px;
+    
+  }
+
+  .slogan{
+   position: absolute;
+   left: 50px;
+   top: 50px;
+   font-size: 60px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+
+  .small-slogan{
+    font-size: 40px;
+    color: #0099cc;
+    position: relative;
+    bottom: 120px;
+    
+  }
+
+  /* last section */
+
+   .small-heading{
+    position: relative;
+    top: 500px;
+   text-align: center;
+   font-size: 50px;
+   font-weight: bold;
+  }
+
+  .three-car-images{
+    position: relative;
+    top: 530px;
+   
+    margin: 50px;
+    }
+
+    .last-car-images{
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: space-around;
+
+
+    } 
+
+
+    @media screen and (max-width: 600px)
+   {
+
+      .navbar{
+        position: relative;
+        width: 700px;
+
+      }
+
+      .navbar-menu{
+        /* position: absolute; */
+        top: 0;
+        margin-left: 250px;
+     
+      }
+
+      .menus{
+        margin: 5px;
+        font-size: 20px;
+        display: block;
+
+       }
+
+       .slogan{
+          position: absolute;
+          left: 50px;
+          top: 5px;
+          font-size: 50px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+
+  .middle-section{
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .small-slogan{
+    font-size: 30px;
+    color: #0099cc;
+    position: relative;
+    bottom: 110px;
+    
+  }
+
+  .car-image{
+    height: 280px;
+  position: relative;
+  left: 100px;
+  right: 100px;
+  top: 280px;
+  margin-left: auto;
+  margin-right: auto;
+border-radius: 30px;
+     }
+
+     
+   .small-heading{
+    position: relative;
+    top: 350px;
+   text-align: center;
+   font-size: 40px;
+   font-weight: bold;
+  }
+
+  .three-car-images{
+    position: relative;
+    top: 350px;
+   height: 200px;
+  
+    margin: 50px;
+    } 
+
+    
+    .last-car-images{
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: space-evenly;
+    } 
+
+   
+}
+ 
+</style>
 </head>
 <body>
-    <h1>index</h1>
+    <div class="navbar" class="navbar">
+
+
+        <div>
+            <img src="car-logo.png" alt="logo" class="car-logo">
+        </div>
+        
+        <div class="navbar-menu">
+            <span class="menus">About us</span>
+            <span class="menus">Car</span>
+            <span class="menus">Contact us</span>
+            <span class="menus">Order</span>
+            <span class="menus">Sign in</span>
+        
+        
+        </div>
+            </div>
+        
+            <div class="middle-section">
+        
+                <div class="slogan">
+                    <p>Your Road, Our Cars,<br> One Journey</p><br>
+        
+                    <p class="small-slogan">FIND YOUR CAR TODAY....</p>
+        
+                </div>
+                
+        
+                 <div>
+                    <image src="car.jpg" alt="car" class="car-image" ></image>
+                </div>  
+            </div>
+        
+        <div class="small-heading">Discover Your Perfect Ride Here</div>
+        
+        <div class="last-car-images">
+            <img src="rolls-royce-car-img-1.jpeg" alt="img-1" class="three-car-images">
+            <img src="rolls-royce-car-img-2.jpeg" alt="img-1" class="three-car-images">
+            <img src="rolls-royce-car-img-3.jpeg" alt="img-1" class="three-car-images">
+        
+           <div>
+            
+           </div>
 </body> 
 </html>
