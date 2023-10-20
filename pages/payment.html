@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            text-align: center;
+            width: 100px;
+        }
+        .reg-form{
+            border: 1px solid black;
+            height: 430px;
+            width: 400px;
+            text-align: center;
+           margin: 200px; 
+           margin-left: auto;
+           margin-right: auto;
+           border-radius: 10px;
+           box-shadow: 4px 4px 4px 4px grey;
+           
+           
+        
+        }
+        .address{
+            width: 250px;
+            height: 30px;
+        }
+        body{
+            background-color: #d9d9d9;
+        }
+        .heading{
+            background-color:red;
+            color: grey;
+            padding: 10px;
+            margin-top: 0px;
+            margin-bottom:30px;
+           border-radius: 5px;    
+        }
+        .btn{
+            border-radius: 5px;
+            padding: 5px;
+            width: 90px;
+            
+        }
+        .btn:hover{
+            background-color: hsla(0, 2%, 65%, 0.685);
+            cursor: pointer;  
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<form >
+    <div class="reg-form">
+        <h1 class="heading"><u> RESISTER NOW  </u></h1>
+    <select>
+    <option>Title</option>
+    <option>Mr</option>
+    <option>Mrs</option>
+    <option>Miss</option>
+    </select>
+    <input type="text" placeholder="First" required class="text"/>
+    <input type="text" placeholder="Middle" required class="text"/>
+    <input type="text" placeholder="Last" required class="text"/></br></br>
+    <input type="number" placeholder=" Enter Mobile Number" required/></br></br>
+    <input type="email" placeholder="✉ Enter Email" required/></br></br>
+    <input type="text" placeholder="Enter your address" required class="address"/></br></br>
+    <input type="password" placeholder="Enter password" required/></br></br>
+    <p>
+        <input type="checkbox" id="check" checked="true" required/>
+        <label for="check" ></label>
+        I accept the <b>terms & condition</b> and authorise Tata Motar Company to contact me via SMS , email ,Whatsapp and other modes of communication
+    </p>
+    <button class="btn">Submit</button>
+    </div>
+</form>
+</body>
+</html>

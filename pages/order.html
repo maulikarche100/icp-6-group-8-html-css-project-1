@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .text{
+            text-align: center;
+            width: 100px;
+        }
+        .reg-form{
+            border: 1px solid black;
+            height: 550px;
+            width: 400px;
+            text-align: center;
+           margin: 200px; 
+           margin-left: auto;
+           margin-right: auto;
+           border-radius: 10px;
+           box-shadow: 4px 4px 4px 4px grey;
+           
+           
+        
+        }
+        .address{
+            width: 250px;
+            height: 30px;
+            text-align: center;
+        }
+        body{
+            background-color: #d9d9d9;
+        }
+        .heading{
+            background-color:#ff4d4d;
+            color:black;
+            padding: 10px;
+            margin-top: 0px;
+            margin-bottom:30px;
+           border-radius: 10px;    
+        }
+        .btn{
+            border-radius: 5px;
+            padding: 5px;
+            width: 90px;
+            background-color:#ff4d4d ;
+            color:black;
+            
+        }
+        .btn:hover{
+            background-color: hsla(0, 2%, 65%, 0.685);
+            cursor: pointer;  
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-    <h1>order</h1>
+<form >
+    <div class="reg-form">
+        <h1 class="heading"><u> BOOK CAR NOW </u></h1>
+    <input type="text" placeholder=" Enter Your Name " required class="address"/></br></br>
+    <input type="number" placeholder=" Enter Mobile Number" required class="address"/></br></br>
+    <input type="email" placeholder="✉ Enter Email" required class="address"/></br></br>
+    <input type="text" placeholder="Pick up location " required class="address"/></br></br>
+    <input type="password" placeholder="Drop location " required class="address"/></br></br>
+    <input type="date" placeholder="Enter Your Pick up date" required  class="address"/> </br></br>
+    <input type="time" placeholder="Enter Your Pick up time" required class="address" /> </br></br>
+    <button class="btn">BOOK NOW </button>
+    </div>
+</form>
 </body>
 </html>
