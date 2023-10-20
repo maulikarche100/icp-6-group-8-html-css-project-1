@@ -1,0 +1,172 @@
+<IDOCTYPE html>
+<html> 
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px; 
+        padding: 20px;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .row{
+        display: flexbox;
+        display: flex;
+        flex-wrap: wrap; 
+        margin: 0 -16px;
+    }
+    
+    .col-25{
+        flex: 25%;
+        padding: 0 16px;
+    }
+    
+    .col-50{
+        flex: 50%; 
+        width: 300px;
+        padding: 0 10px;
+    }
+    
+    select{
+        width: 330px;
+        height: 40px;
+    }
+
+    .col-75{
+        flex: 75%; 
+        padding: 0 16px;
+    }
+
+    .container{
+        background-color: #d9d9d9; 
+        padding: 5px 20px 15px 20px; 
+        border: 1px solid lightgrey; 
+        border-radius: 3px;
+    }
+
+    input[type=text]{
+        width: 100%; 
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc; 
+        border-radius: 3px;
+    }
+
+    input[type-number]{
+        width: 320px; 
+        height: 40px;
+    }
+
+    .icon-container{
+        margin-bottom: 20px; 
+        padding: 7px 0; 
+        font-size: 24px;
+    }
+
+    .btn{
+        width: 690px;
+        height: 40px;
+        font-size: 20px; 
+        display: block;
+        color: white;
+        background-color: black; 
+        border: none;
+        box-shadow:2px 3px grey;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 800px) {
+        .row{ 
+            flex-direction: column-reverse;
+        }
+
+        .col-25{
+            margin-bottom: 20px;
+        }
+    }
+    </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-75">
+                <div class="container">
+                    <form>
+                        <div class="row">
+                            <div class="col-50">
+                                <h1>BILLING ADDRESS📍</h1>
+                                👦🏻Full Name<br>
+                                <input type="text" placeholder="Enter Full Name" required/><br><br> 
+                                ✉️Email<br>
+                                <input type="text" placeholder="Enter Email" required /><br><br>
+                                📍Address<br>
+                                <input type="text" placeholder="Enter Address" required /><br><br> 
+                                🏛️City<br>
+                                <input type="text" placeholder="Enter City" required /><br><br>
+                                <div class="row"> 
+                                    <div class="col-50"> 
+                                        🌎State<br>
+                                        <select>
+                                            <option>Choose State</option>
+                                            <option>Maharashtra</option>
+                                            <option>Andhra Pradesh</option>
+                                            <option>Goa</option>
+                                            <option>Madhya Pradesh</option>
+                                            <option>Rajasthan</option> 
+                                            <option>Manipur</option>
+                                            <option>Kerala</option>
+                                            <option>Assa</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-50">
+                                        📌Pin code<br> 
+                                        <input type="number" placeholder="Enter Pin Code" required /><br><br>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-50">
+                                <h1>PAYMENT💰</h1>
+                                Accepted Cards
+                                <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color: navy;"><i> 
+                                    <i class="fa fa-cc-amex" style="color: blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color: orange;"></i>
+                                </div><br>
+                                Card Name
+                                <input type="text" placeholder="Enter Card Name" required /><br><br> 
+                                Credit Card Number<br>
+                                <input type="text" placeholder="Enter Card Number" required /><br><br>
+                                Exp Month<br>
+                                <input type="text" placeholder="Enter Month" required /><br><br>
+                                <div class="row"> 
+                                    <div class="col-50"> 
+                                        Exp Year<br>
+                                        <select>
+                                            <option>Choose Year</option>
+                                            <option>2025</option>
+                                            <option>2024</option> 
+                                            <option>2023</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-50">
+                                        CVV<br>
+                                        <input type="text" placeholder="CVV" required /><br></br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="Continue to Checkout" class="btn"> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

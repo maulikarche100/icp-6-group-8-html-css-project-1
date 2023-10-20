@@ -154,14 +154,204 @@
     } 
 
 
+/* footer css */
 
+a {
+            color: white; 
+            text-decoration: none; 
+        }
+
+        
+        a:hover {
+            color: tomato; 
+        }
+        .footer {
+            background-color:black;
+            width: 1520px;
+            padding: 5px;
+            margin-top: 10px;
+            bottom: 0%;
+            border-radius: 10px;
+            position: relative;
+            top: 650px;
+        }
+    
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 10px;
+            padding: 5px;
+            text-decoration: none;
+        }
+    
+        
+        
+        
+    .footer-text {
+        font-size: 24px;
+    }
+    
+    
+    .footer1 {
+        width: 150px;
+    }
+    
+    .social {
+        display: none;
+    }
+
+    .footer-text {
+        font-size: 24px;
+    }
+
+
+    
+    
+
+    .social {
+        display: none;
+    }
+
+
+        .footer-text {
+            font-size: 30px;
+            
+            color: white;
+            
+        }
+        .footer-detail{
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .social {
+            padding: 10px;
+        }
+        .text{
+            color: white;
+            cursor: pointer;
+            
+            
+        }
+        .subtitle{
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+            
+        }
+        
+        .logos{
+            color: white;
+            cursor: pointer;
+            
+            display: inline-block;
+            margin-left: 10px;
+            padding: 20px;
+            
+            
+            transition: transform 0.2s; 
+        }
+
+        
+        
+        .right-box{
+            margin-left: 20px;
+        }
+        .center-box{
+            margin-left: 20px;
+        }
+        .mail-img{
+            margin-right: 10px;
+            
+        }
+        
+       
+        
+        @media (max-width: 600px){
+        
+    .footer {
+        background-color: black;
+        width: 100%; 
+        padding: 5px;
+        margin-top: -150px;
+        border-radius: 10px;
+        height: 1000px;
+    }
+
+    .main-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 10px;
+        padding: 5px;
+    
+    }
+
+    .footer1 {
+        width: 100%; 
+    }
+
+    .footer-text {
+        font-size: 30px;
+        color: white;
+        margin-right: ;
+    }
+
+    .footer-detail {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .text {
+        color: white;
+        cursor: pointer;
+    }
+
+    .subtitle {
+        cursor: pointer;
+        color: white;
+    }
+
+    .logos {
+        color: white;
+        cursor: pointer;
+        display: inline;
+        margin-left: 10px;
+        padding: 20px;
+    }
+
+    .right-box {
+    margin-right: 300px;
+        
+    }
+    .center-box{
+        margin-right: 500px;
+    }
+
+    .mail-img {
+        margin-right: 40px;
+        
+    }
+    
+        .email{
+            text-decoration: none;
+        }
+        
+        
+    }
 
     @media screen and (max-width: 600px)
    {
 
-    body{
-      background-color: pink;
-    }
+   
       .navbar{
         position: relative;
         width: 620px;
@@ -223,18 +413,24 @@ border-radius: 30px;
 
      
    .small-heading{
-    position: relative;
+    /* position: relative;
     top: 350px;
-    left: 0px;
+   right: 20px;
  
    font-size: 25px;
    font-weight: bold;
-  margin-left: 5px;
+  margin-left: 5px; */
+
+  font-size: 25px;
+  position: relative;
+  top: 350px;
+  left: -65px;
   }
 
   .three-car-images{
     position: relative;
     top: 350px;
+    left: -50px;
    
    height: 150px;
   
@@ -327,5 +523,91 @@ border-radius: 30px;
 
         </div>
           
+        <!-- footer -->
+        <div class="footer">
+          <div class="main-content">
+              <div class="footer1">
+                  <h2 class="footer-text">About us</h2>
+                  <a  class="footer-detail" href="https://www.com/">About</a>  </br>
+              
+              </br>
+                  <div class="footer-detail"> Privay Policy</div></br>
+                  <div class="footer-detail"> Terms & Condition</div></br>
+                  <div class="footer-detail"> FAQs</div>
+      
+      
+                  <div class="social"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-youtube"></i></div>
+              </div>
+              <div class="center-box">
+                  <h2 class="footer-text">Others</h2>
+                  <div class="content"><span class="fa-solid fa-location-dot"></span><span class="text">Health Insurance</br>
+                  </br>
+                      Life Insurance</br>
+                  </br>
+                      Personal Loan
+                  </span></div>  
+               </div>
+      
+              <div class="right-box">
+                  <h2 class="footer-text">Contact us</h2>
+                  <div class="location-img">
+                      <img src="./image/location-image.png"height="18px">
+                      
+                      <span class="subtitle">307, Kothari Heights, Above Bus </br>
+                            Stand Shrigonda,</br>
+                            A.Nagar - 413701
+                      </span>
+                  </div>
+              </br>
+              <div class="phone-img">
+                  <img src="./image/call.png"height="18px">
+      
+          
+          <span class="subtitle">+91-7709482439
+      
+          </span>
+      </div>
+      </br>
+      <div class="mail-img">
+          <img src="./image/mail-inbox-app.png
+"height="18px">
+      
+          <a href="mailto:luxuryshowroom1246@email.com">luxuryshowroom1246@email.com</a>
+      </div>
+      </br>
+      </br>
+          <div class="logos">
+              
+              
+          
+          
+              <p><a href="https://www.instagram.com/luxury_showroom1246" target="_blank"><img src="./image/instagram (1).png"height="25px" alt="Instagram"></a></p>
+              </div>
+      
+              <div class="logos">
+                  <p><a href="https://www.facebook.com/@luxury.showroom.2023" target="_blank"><img src="./image/facebook (1).png"height="25px" alt="facebook"></a></p>
+      
+                </div>
+                
+                  
+      
+                <div class="logos">
+                  <p><a href="https://www.youtube.com/" target="_blank"><img src="./image/youtube.png" height="25px" alt="Youtube"></a></p>
+              </div>
+      
+      
+              
+      
+      
+              </div>
+      </br>
+      </div>
+      
+         </div>
+       </form>
+       </div>
+       </div>
+          </div>
+      </div>
 </body> 
 </html>
