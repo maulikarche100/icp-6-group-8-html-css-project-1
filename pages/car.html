@@ -5,595 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>cars</title>
-  <style>
-    body {
-      background-color: #d9d9d9;
-      margin: 0;
-      padding: 0;
-
-    }
-
-    .navbar {
-      height: 200px;
-      width: 100%;
-      /* background-color: #666666; */
-      background-color: black;
-      display: flex;
-      flex-wrap: wrap;
-      position: relative;
-
-    }
-
-    .car-logo {
-      height: 200px;
-      position: absolute;
-      margin-top: 0px;
-    }
-
-    .navbar-menu {
-      font-size: 20px;
-      font-weight: bold;
-      color: white;
-      margin-left: 500px;
-      text-align: center;
-      position: absolute;
-      top: 90px;
-      left: 60px;
-    }
-
-    .menus {
-      margin: 40px;
-      font-size: 25px;
-    }
-
-    .menus:hover {
-      height: 150px;
-      background-color: rgb(210, 28, 28);
-      box-shadow: 0 0 10px white;
-      background-size: 100px;
-    }
-
-
-
-    .anchor-tag {
-      text-decoration-line: none;
-      margin-left: 50px;
-    }
-
-    .anchor-text {
-      color: rgb(99, 6, 6);
-      text-decoration-line: underline;
-      font-size: 20px;
-      
-    }
-
-    .info-box {
-      height: 260px;
-
-      margin-top: 30px;
-    }
-
-    .header-page2 {
-      background-color: #d9d9d9;
-      position: sticky;
-      padding: 15px;
-      top: 1px;
-    }
-
-    .search-header {
-      margin-left: 1000px;
-    margin-right: 273px;
-      border: 1px solid white;
-
-    }
-
-    .heading-text {
-      font-weight: bold;
-      font-size: 35px;
-      margin-left: 50px;
-
-    }
-
-    .main-info-title {
-      font-size: 30px;
-      margin-top: 100px;
-    }
-
-    table,th,td {
-      border: 1px solid black;
-      width: 50%;
-    }
-
-    .table {
-      border-collapse: collapse;
-      margin-left: 50px;
-      font-size: 19px;
-      margin-top: 20px;
-    }
-
-    .car-info {
-      font-size: 20px;
-      margin-left: 50px;
-      width: 1000px;
-      height: 50px;
-
-    }
-
-    .main-info {
-      margin-left: 50px;
-      margin-top: 100px;
-    }
-
-    .car-box {
-      width: 1000px;
-      height: 200px;
-      border: 1px solid black;
-      margin-top: 20px;
-      display: flex;
-      position: relative;
-    }
-
-    .img-car {
-      height: 200px;
-      width: 250px;
-    }
-
-    .like-icon {
-      height: 18px;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: #a5aaa5;
-      padding: 8px;
-      border-radius: 50%;
-      color: white;
-    }
-
-    .like-icon:hover {
-      background-color: rgb(243, 55, 55);
-
-    }
-
-    .share-icon {
-      height: 18px;
-      position: absolute;
-      top: 10px;
-      right: 60px;
-      background-color: #a5aaa5;
-      padding: 8px;
-      border-radius: 50%;
-      color: white;
-
-    }
-
-    .share-icon:hover {
-      background-color: rgb(113, 113, 244);
-    }
-
-    .img-name {
-      display: block;
-      margin-top: 20px;
-      cursor: pointer;
-      font-family: arial;
-      font-size: 25px;
-
-    }
-
-    .img-info {
-      margin-left: 40px;
-      font-size: 20px;
-    }
-
-    .car-fuel-type {
-      font-size: 15px;
-      color: grey;
-    }
-
-    .offer-btn {
-      border: 1px solid;
-      border-color: black;
-      color: black;
-      cursor: pointer;
-      border-radius: 3px;
-      padding: 6px;
-      font-size: 15px;
-      width: 100px;
-    }
-
-    .offer-btn:hover {
-      box-shadow: 1px 1px grey;
-      border-radius: 5px;
-      font-size: 14px;
-      color: #0099cc;
-      background-color: rgb(245, 230, 223);
-
-
-    }
-
-    .know-more-btn {
-      border-radius: 3px;
-      border: 1px solid;
-      color: black;
-      cursor: pointer;
-      padding: 6px;
-      font-size: 15px;
-      
-    }
-
-    .know-more-btn:hover {
-      color: #0099cc;
-      background-color: rgb(245, 230, 223);
-      border-radius: 5px;
-      font-size: 14px;
-      box-shadow: 1px 1px grey;
-    }
-
-    .upcoming-cars-div {
-      font-weight: bold;
-      margin-top: 50px;
-      font-size: 30px;
-    }
-
-    .key-highlits-tata-car-table {
-      height: 450px;
-      width: 1000px;
-      border: 0px solid black;
-      margin-top: 50px;
-      box-shadow: 0px 1px 0px 1.5px grey;
-
-    }
-
-    .key-highlits-tata-car-table-header {
-      font-weight: bold;
-      margin-left: 20px;
-      padding: 15px;
-      font-size: 25px;
-    }
-    .table-1 {
-      border-collapse: collapse;
-      margin-left: 90px;
-      font-size: 20px;
-      color: grey;
-      width: 750px;
-      height: 300px;
-
-    }
-
-    .car-videos-div {
-      height: 730px;
-      width: 1000px;
-      border: 0px solid black;
-      margin-top: 50px;
-      box-shadow: 0px 1px 0px 1.5px grey;
-      position: relative;
-    }
-
-    .video-title {
-
-      font-weight: bold;
-      margin-left: 20px;
-      padding: 15px;
-      font-size: 25px;
-    }
-
-    .video-box1 {
-      width: 400px;
-      height: 280px;
-      margin-left: 70px;
-      box-shadow: 0px 1px 0px 1.5px grey;
-      position: absolute;
-      top: 70px;
-
-    }
-
-    .video-box2 {
-      width: 400px;
-      height: 280px;
-      box-shadow: 0px 1px 0px 1.5px grey;
-      position: absolute;
-      top: 70px;
-      right: 70px;
-    }
-
-    .video-box3 {
-      width: 400px;
-      height: 280px;
-      margin-left: 70px;
-      box-shadow: 0px 1px 0px 1.5px grey;
-      position: absolute;
-      top: 380px;
-
-    }
-
-    .video-box4 {
-      width: 400px;
-      height: 280px;
-      box-shadow: 0px 1px 0px 1.5px grey;
-      position: absolute;
-      top: 380px;
-      right: 70px;
-    }
-
-    .video-heading {
-      font-size: 19px;
-      padding-left: auto;
-      padding-right: auto;
-    }
-
-    .see-more-videos-div {
-      margin-top: 580px;
-      margin-left: 800px;
-      font-size: 25px;
-    }
-
-    .see-more-videos {
-      text-decoration: none;
-    }
-
-    .tata-car-images-div {
-      height: 700px;
-      width: 1000px;
-      border: 0px solid black;
-      margin-top: 50px;
-      box-shadow: 0px 1px 0px 1.5px grey;
-      position: relative;
-
-    }
-
-    .next-btn-div {
-      position: absolute;
-      left: 960px;
-      top: 295px;
-    }
-
-    .next-btn-icon {
-      cursor: pointer;
-      border-radius: 50px;
-      border: 1px solid black;
-      height: 50px;
-      background-color: white;
-    }
-
-    .tata-car-images-title {
-      font-weight: bold;
-      padding: 15px;
-      font-size: 25px;
-    }
-
-    .tata-car-images-discription {
-      margin-left: 20px;
-      font-size: 19px;
-      color: grey;
-      padding-top: 0px;
-    }
-
-    .images-div-main {
-      display: flex;
-    }
-
-    .image-div {
-      height: 480px;
-      width: 350px;
-      margin-left: 10px;
-      margin-right: 10px;
-      box-shadow: 0.1px 0.1px 1px 1px grey;
-
-    }
-
-    .image1 {
-      height: 200px;
-      width: 312px;
-      cursor: pointer;
-    }
-
-    .image2 {
-      height: 130px;
-      width: 150px;
-      cursor: pointer;
-
-    }
-
-    .image3 {
-      height: 130px;
-      width: 157px;
-      cursor: pointer;
-    }
-
-    .image-name {
-      font-family: arial;
-      padding: 10px;
-      font-size: 19px;
-      cursor: pointer;
-    }
-
-    .more-images-btn {
-      width: 170px;
-      font-size: 15px;
-      height: 30px;
-      margin-left: 60px;
-      cursor: pointer;
-      color: orangered;
-      border: 1px solid orangered;
-
-    }
-
-    .more-images-btn-div {
-      margin-left: 15px;
-    }
-
-    .next-btn {
-      border-radius: 50px;
-      height: 40px;
-      border: 1px solid black;
-      margin-right: 40px;
-    }
-
-    .all-tata-images {
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 25px;
-    }
-
-    .reviews-tata-cars {
-      height: 550px;
-      width: 1000px;
-      border: 0px solid black;
-      margin-top: 50px;
-      box-shadow: 0px 1px 0px 1.5px grey;
-      position: relative;
-
-    }
-    .reviews-main-box{
-      margin-top: 80px;
-    }
-
-    .reviews-title {
-      font-weight: bold;
-      padding: 15px;
-      font-size: 25px;
-
-    }
-
-    .reviews-boxes {
-      height: 400px;
-      width: 300px;
-      margin-top: 10px;
-      margin-left: 30px;
-      border: 0.5px solid black;
-      border-radius: 5px;
-
-    }
-
-    .cars-name {
-      font-size: 20px;
-      margin-left: 12px;
-      padding-top: 10px;
-      font-family: arial;
-
-    }
-
-    .rating-stars-images {
-      height: 15px;
-
-    }
-
-    .rating-stars-images-box {
-      margin-left: 12px;
-
-    }
-
-    .reviews-in-one-sentence {
-      font-size: 20px;
-      margin-left: 12px;
-      font-family: arial;
-    }
-
-    .reviews-declare {
-      font-size: 15px;
-      margin-left: 12px;
-      margin-right: 12px;
-      font-family: arial;
-      color: grey;
-    }
-
-    .read-more-reviews {
-      text-decoration: none;
-      font-size: 20px;
-      margin-left: 12px;
-    }
-
-    .reviews-name {
-      font-size: 20px;
-      margin-left: 12px;
-    }
-
-    .reviews-date {
-      color: grey;
-      font-size: 15px;
-    }
-
-    .go-homepage-connect-sentence {
-      color: grey;
-      font-size: 20px;
-    }
-
-    .go-homepage {
-      text-decoration: none;
-      font-size: 20px;
-    }
-
-    .reviews-boxes-set {
-      display: flex;
-      margin-right: 17px;
-    }
-
-    .reviews-next-btn {
-      cursor: pointer;
-      border-radius: 50px;
-      border: 1px solid black;
-      height: 50px;
-      background-color: white;
-
-    }
-
-    .reviews-next-btn-div {
-      position: absolute;
-      left: 960px;
-      top: 270px;
-
-    }
-
-    .sider-box-position {
-      display: flex;
-      position: relative;
-     }
-
-    .sider-main-box-div {
-      width: 340px;
-      margin-left: 50px;
-      margin-right: 10px;
-      height: 430px;
-      border: 1px solid black;
-      border-radius: 5px;
-      box-shadow: 1px 1px 1px 1px grey;
-      position: sticky;
-      top: 60px;
-      background-image: url(../image/tata-altroz.png);
-      
-    }
-    .sider-child-div{
-      padding: 15px;
-    }
-    .sider-child-box-title{
-      font-size: 25px;
-      font-weight: bold;
-      font-family: arial;
-    }
-    .sider-child-box-discription{
-      font-size: 16px;
-      color: white;
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
-      cursor: pointer;
-    }
-    
- 
-
-
-
-
-    @media screen and (max-width: 950px) {
-      .sider-main-box-div {
-     
-    display: none;
-    }
-      .sider-box-position {
-      display: flex;
-      flex-direction: column;
-     }
-}
-    
-   
-  </style>
+  <link rel="stylesheet" href="./css/car-page.css">
 </head>
 
 <body>
@@ -603,30 +15,35 @@
 
 
       <div>
-        <img src="../image/car-logo.png" alt="logo" class="car-logo">
+          <img src="../image/car-logo.png" alt="logo" class="car-logo">
       </div>
-
+      
       <div class="navbar-menu">
-        <span class="menus">About us</span>
-        <span class="menus">Car</span>
-        <span class="menus">Contact us</span>
-        <span class="menus">Order</span>
-        <span class="menus">Sign in</span>
+       <a href="../pages/about.html"><span class="menus">About us</span></a>
+         <a href="../pages/car.html"> <span class="menus">Cars</span></a>
+         <a href="../pages/contact.html"> <span class="menus">Contact us</span></a>
+         <a href="../pages/order.html"> <span class="menus">Order</span></a>
+         <a href="../pages/login.html" class="login">&nbsp;<span>Login &nbsp; / &nbsp; </span></a>
+         <a href="../pages/register.html" class="register"> <span>Register</span></a>
+         
+       <!-- <a href="./pages/register.html"> <span class="menus">Login</span></a> -->
+       </div>
+
+     <!-- <div class="login-register">
+      <a href="./pages/login.html" class="login"><img src="image/login-image.png" alt="user-login" class="user-login-image">&nbsp;<span>Login &nbsp;&nbsp; </span></a>
+      <a href="./pages/register.html" class="register"> <span>Register</span></a>
+      
+     </div> -->
 
 
-      </div>
+     
+          </div>
     </div>
 
-    <div class="header-page2">
-      <p class="anchor-text">
-        <a href="./../index.html" class="anchor-tag">Home </a> > Cars
-      </p>
-      <div class="search-header">
-        <form><input type="text" placeholder=" &#128269 Search " /></form>
-      </div>
-    </div>
 
-  </div>
+  
+
+  
 
   <div class="sider-box-position">
     <div>
@@ -949,7 +366,7 @@
         <div class="car-videos-div">
           <p class="video-title">Tata Cars Videos</p>
           <div class="video-box1">
-            <video controls height="200px" width="400px" poster="../image/tata-harrier-Facelift-2023.png">
+            <video controls  poster="../image/tata-harrier-Facelift-2023.png" class="image-poster">
               <source src="../image/tata-harrier video.mp4" type="video/mp4" />
             </video>
             <span class="video-heading">Tata Harrier 2023 and Tata Safari Facelift 2023 | All Changes Explained In Hindi
@@ -957,14 +374,14 @@
           </div><br />
 
           <div class="video-box2">
-            <video controls height="200px" width="400px" poster="../image/tata-nexon EV.png">
+            <video controls  poster="../image/tata-nexon EV.png" class="image-poster">
               <source src="../image/tata-nexon-Ev video.mp4" type="video/mp4" />
             </video>
             <span class="video-heading">Tata Nexon EV Facelift 2023 Review: ये है सबसे BEST NEXON!</span>
           </div>
 
           <div class="video-box3">
-            <video controls height="200px" width="400px" poster="../image/tata-punch.png">
+            <video controls  poster="../image/tata-punch.png" class="image-poster">
               <source src="../image/tata-nexon-video.mp4" type="video/mp4" />
             </video>
             <span class="video-heading">Tata Punch Adventure 2023 😍| मात्र ₹ 6.84 लाख में Punch का ये मोस्ट VFM Variant
@@ -972,7 +389,7 @@
           </div>
 
           <div class="video-box4">
-            <video controls height="200px" width="400px" poster="../image/tata-tiago-EV.png">
+            <video controls poster="../image/tata-tiago-EV.png" class="image-poster">
               <source src="../image/tata-altroz video.mp4" type="video/mp4" />
             </video>
             <span class="video-heading">Tiago EV Or Citroen eC3? Review To Find The Better Electric Hatchback.
@@ -1119,20 +536,14 @@
           </div>
 
           <div>
-            <p class="go-homepage-connect-sentence"><a href="../index.html" class="go-homepage">Home</a> &nbsp; > &nbsp;
+            <p class="go-homepage-connect-sentence">
+              <a href="../index.html" class="go-homepage">
+                Home
+
+              </a> &nbsp; > &nbsp;
               Tata Cars</p>
           </div>
-
-
-
-
-
-
-
-
-
-
-
+          
 
         </div>
       </div>
@@ -1150,6 +561,7 @@
       </div>
     </div>
   </div>
+  
  
 
 
@@ -1157,7 +569,84 @@
 
 
 
- </div>
+</div>
+ <div class="ac">
+  <div class="footer">
+    <div class="main-content">
+        <div class="footer1">
+            <h2 class="footer-text">About us</h2>
+            <a  class="footer-detail" href="https://www.com/">About</a>  </br>
+        
+        </br>
+            <div class="footer-detail"> Privay Policy</div></br>
+            <div class="footer-detail"> Terms & Condition</div></br>
+            <div class="footer-detail"> FAQs</div>
+
+
+            <div class="social"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-youtube"></i></div>
+        </div>
+        <div class="center-box">
+            <h2 class="footer-text">Others</h2>
+            <div class="content"><span class="fa-solid fa-location-dot"></span><span class="text">Health Insurance</br>
+            </br>
+                Life Insurance</br>
+            </br>
+                Personal Loan
+            </span></div>  
+         </div>
+
+        <div class="right-box">
+            <h2 class="footer-text">Contact us</h2>
+            <div class="location-img">
+                <img src="../image/location.png"height="18px">
+                
+                <span class="subtitle">307, Kothari Heights, Above Bus </br>
+                      Stand Shrigonda,</br>
+                      A.Nagar - 413701
+                </span>
+            </div>
+            <br>
+            
+            <span class="contact-no">
+              <img src="../image/call.png" height="18px"/>
+              +91-7709482439
+
+        
+            </span>
+            <div class="mail-img">
+              <img src="../image/mail-inbox-app.png"height="18px">
+          
+              <a href="mailto:luxuryshowroom1246@email.com">luxuryshowroom1246@email.com</a>
+            </div>
+            <br>
+            <div class="pyq">
+              <div class="xyz">
+                <p>
+                  <a href="https://www.instagram.com/luxury_showroom1246" target="_blank">
+                    <img src="../image/instagram (1).png"height="25px" alt="Instagram">
+                  </a>
+                </p>
+              </div>
+              <div class="xyz">
+                <p>
+                  <a href="https://www.facebook.com/@luxury.showroom.2023" target="_blank">
+                    <img src="../image/facebook (1).png"height="25px" alt="facebook"></a>
+                </p>
+
+              </div>
+              <div class="xyz">
+                <p>
+                  <a href="https://www.youtube.com/" target="_blank"
+                  ><img src="../image/youtube.png" height="25px" alt="Youtube"></a>
+                </p>
+
+              </div>
+            </div>
+        </br>     
+  </div>
+</div>
+
+
 </body>
 
 </html>
