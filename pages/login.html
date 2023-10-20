@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .text{
+            text-align: center;
+            width: 100px;
+        }
+        .reg-form{
+            border: 1px solid black;
+            height: 350px;
+            width: 300px;
+            text-align: center;
+           margin: 200px; 
+           margin-left: auto;
+           margin-right: auto;
+           border-radius: 10px;
+           box-shadow: 4px 4px 4px 4px grey;
+           
+           
+        
+        }
+       
+        body{
+            background-color: #d9d9d9;
+        }
+        .heading{
+            background-color:black;
+            color: #d9d9d9;
+            padding: 10px;
+            margin-top: 0px;
+            margin-bottom:40px;
+           border-radius: 5px;    
+        }
+        .btn{
+            border-radius: 5px;
+            padding: 5px;
+            width: 90px;
+            margin: 10px;
+            
+        }
+        .btn:hover{
+            background-color: hsla(0, 2%, 65%, 0.685);
+            cursor: pointer;  
+            border: 1px solid black;
+        }
+        .forget-password{
+            text-align: left;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
-  <h1>login</h1>
-  Username<input type="Username" placeholder="Type your username" required/>  
+<form >
+ <span> <a href="./../index.html">Home</a> > <a href="./register.html">Register</a></span>
+    <div class="reg-form">
+        <h1 class="heading"><u>Login Now</u></h1>
+    <input type="email" placeholder="✉ Enter Email" required/></br></br>
+    
+    <input type="password" placeholder="Enter password" required/></br></br>
+    <p class="forget-password">Forget password ?</p>
+    <button class="btn">Submit</button>
+    <p>Not a member ? <a href="./register.html"><b>Register here !</b></a></p>
+    </div>
+</form>
 </body>
 </html>
