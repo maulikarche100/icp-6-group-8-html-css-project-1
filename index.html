@@ -4,9 +4,337 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #d9d9d9;
+    }
+
+  .navbar{
+    height: 150px;
+    width: 100%;
+    /* background-color: #666666; */
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+    }  
+
+ .car-logo{
+    height: 200px;
+    position: absolute;
+    top: 0;
+ }
+  
+
+  .navbar-menu{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-left: 230px;
+    text-align: center;
+  position: absolute;
+  top: 90px;
+  left: 60px;
+
+  }
+
+  .menus{
+    margin: 40px;
+    font-size: 25px;
+   text-decoration: none;
+    color: white;
+  }
+
+  .menus:hover{
+    height: 150px;
+   color: orange;
+   text-decoration: underline;
+  
+   
+    background-size: 200px;
+  }
+
+
+  .login-register{
+   
+    position: relative;
+    top: 25px;
+   left: 960px;
+   font-size: 25px;
+   font-weight: bold;
+   
+  }
+
+  .login{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .login:hover{
+    color: orange;
+    text-decoration: underline;
+  }
+
+  .register{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .register:hover{
+    color: orange;
+    text-decoration: underline;
+  }
+
+  .user-login-image{
+    height: 20px;
+    width: 20px;
+    }
+
+    .location{
+      height: 20px;
+      width: 120px;
+      position: relative;
+      left: 800px;
+      top: 90px;
+    }
+  
+  /* midddle section */
+  .middle-section{
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .car-image{
+    height: 400px;
+    position: absolute;
+    right: 60px;
+    border-radius: 30px;
+    
+  }
+
+  .slogan{
+   position: absolute;
+   left: 50px;
+   top: 50px;
+   font-size: 60px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+
+  .small-slogan{
+    font-size: 40px;
+    color: #0099cc;
+    position: relative;
+    bottom: 120px;
+    
+  }
+
+  /* last section */
+
+   .small-heading{
+    position: relative;
+    top: 540px;
+   text-align: center;
+   font-size: 50px;
+   font-weight: bold;
+  }
+
+  .three-car-images{
+    position: relative;
+    top: 600px;
+   
+    margin: 50px;
+    }
+
+    .last-car-images{
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: space-around;
+
+
+    } 
+
+
+
+
+    @media screen and (max-width: 600px)
+   {
+
+    body{
+      background-color: pink;
+    }
+      .navbar{
+        position: relative;
+        width: 620px;
+
+      }
+
+      .navbar-menu{
+        /* position: absolute; */
+        top: 0;
+        margin-left: 170px;
+     
+      }
+
+      .menus{
+        margin: 5px;
+        font-size: 20px;
+        display: block;
+        
+       }
+
+       .slogan{
+          position: absolute;
+          left: 50px;
+          top: 5px;
+          font-size: 40px;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+
+  .middle-section{
+    margin-top: 15px;
+    margin-left: 0px;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .small-slogan{
+    font-size: 30px;
+    color: #0099cc;
+    position: relative;
+    bottom: 100px;
+    
+  }
+
+  .car-image{
+    height: 250px;
+  position: relative;
+  left: 55px;
+  right: 100px;
+  top: 260px;
+ 
+  margin-left: 5px;
+  margin-right: 1000px;
+  
+border-radius: 30px;
+     }
+
+     
+   .small-heading{
+    position: relative;
+    top: 350px;
+    left: 0px;
+ 
+   font-size: 25px;
+   font-weight: bold;
+  margin-left: 5px;
+  }
+
+  .three-car-images{
+    position: relative;
+    top: 350px;
+   
+   height: 150px;
+  
+    margin-left: 0px; 
+    } 
+
+    
+    .last-car-images{
+        display: flex;
+        
+        flex-wrap: wrap;
+       justify-content: space-evenly;
+      
+    } 
+
+
+    .last-section{
+      margin-left: 0;
+    }
+   
+
+    .login{
+     
+        font-size: 20px;
+        
+    }
+
+    .register{
+     
+        font-size: 20px;
+        
+    }
+}
+
+ 
+</style>
 </head>
 <body>
-    <h1>Home page</h1>
-    <h2>Mansi wadgaonkar</h2>
+    <div class="navbar" class="navbar">
+
+
+        <div>
+            <img src="image/car-logo.png" alt="logo" class="car-logo">
+        </div>
+        
+        <div class="navbar-menu">
+         <a href="./pages/about.html"><span class="menus">About us</span></a>
+           <a href="./pages/car.html"> <span class="menus">Cars</span></a>
+           <a href="./pages/contact.html"> <span class="menus">Contact us</span></a>
+           <a href="./pages/order.html"> <span class="menus">Order</span></a>
+           <a href="./pages/login.html" class="login">&nbsp;<span>Login &nbsp; / &nbsp; </span></a>
+           <a href="./pages/register.html" class="register"> <span>Register</span></a>
+           
+         <!-- <a href="./pages/register.html"> <span class="menus">Login</span></a> -->
+         </div>
+
+       <!-- <div class="login-register">
+        <a href="./pages/login.html" class="login"><img src="image/login-image.png" alt="user-login" class="user-login-image">&nbsp;<span>Login &nbsp;&nbsp; </span></a>
+        <a href="./pages/register.html" class="register"> <span>Register</span></a>
+        
+       </div> -->
+
+
+       
+            </div>
+        
+            <div class="middle-section">
+        
+                <div class="slogan">
+                    <p>Your Road, Our Cars,<br> One Journey</p><br>
+        
+                    <p class="small-slogan">FIND YOUR CAR TODAY....</p>
+        
+                </div>
+                
+        
+                 <div>
+                    <image src="image/cai-index.jpg" alt="car" class="car-image" ></image>
+                </div>  
+            </div>
+        
+<div class="last-section">
+        <div class="small-heading">Discover Your Perfect Ride Here</div>
+        
+        <div class="last-car-images">
+            <img src="image/tata-car-1.jpeg" alt="img-1" class="three-car-images">
+            <img src="image/tata-car-2.jpeg" alt="img-1" class="three-car-images">
+            <img src="image/tata-car-3.jpeg" alt="img-1" class="three-car-images">
+          </div>
+
+        </div>
+          
 </body> 
 </html>
