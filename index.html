@@ -71,6 +71,8 @@
   .login{
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
   }
 
   .login:hover{
@@ -81,6 +83,8 @@
   .register{
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
   }
 
   .register:hover{
@@ -197,6 +201,8 @@
 
   .middle-section{
     margin-top: 15px;
+    margin-left: 0px;
+    
     position: relative;
     display: flex;
     flex-direction: column;
@@ -207,14 +213,14 @@
     font-size: 30px;
     color: #0099cc;
     position: relative;
-    bottom: 90px;
+    bottom: 100px;
     
   }
 
   .car-image{
     height: 250px;
   position: relative;
-  left: 100px;
+  left: 55px;
   right: 100px;
   top: 260px;
  
@@ -228,27 +234,48 @@ border-radius: 30px;
    .small-heading{
     position: relative;
     top: 350px;
-   margin-left: 10px;
+    left: 0px;
+ 
    font-size: 25px;
    font-weight: bold;
+  margin-left: 5px;
   }
 
   .three-car-images{
     position: relative;
     top: 350px;
+   
    height: 150px;
   
-    margin: 40px;
+    margin-left: 0px; 
     } 
 
     
     .last-car-images{
         display: flex;
+        
         flex-wrap: wrap;
        justify-content: space-evenly;
+      
     } 
 
+
+    .last-section{
+      margin-left: 0;
+    }
    
+
+    .login{
+     
+        font-size: 20px;
+        
+    }
+
+    .register{
+     
+        font-size: 20px;
+        
+    }
 }
 
  
@@ -267,7 +294,7 @@ border-radius: 30px;
            <a href="./pages/car.html"> <span class="menus">Cars</span></a>
            <a href="./pages/contact.html"> <span class="menus">Contact us</span></a>
            <a href="./pages/order.html"> <span class="menus">Order</span></a>
-           <a href="./pages/login.html" class="login"><img src="image/login-image.png" alt="user-login" class="user-login-image">&nbsp;<span>Login &nbsp; / &nbsp; </span></a>
+           <a href="./pages/login.html" class="login">&nbsp;<span>Login &nbsp; / &nbsp; </span></a>
            <a href="./pages/register.html" class="register"> <span>Register</span></a>
            
          <!-- <a href="./pages/register.html"> <span class="menus">Login</span></a> -->
@@ -298,13 +325,16 @@ border-radius: 30px;
                 </div>  
             </div>
         
+<div class="last-section">
         <div class="small-heading">Discover Your Perfect Ride Here</div>
         
         <div class="last-car-images">
             <img src="image/tata-car-1.jpeg" alt="img-1" class="three-car-images">
             <img src="image/tata-car-2.jpeg" alt="img-1" class="three-car-images">
             <img src="image/tata-car-3.jpeg" alt="img-1" class="three-car-images">
-        
+          </div>
+
+        </div>
           
 </body> 
 </html>
